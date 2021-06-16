@@ -1,0 +1,77 @@
+<div>
+	<div class="head">
+		<h1>Home Page</h1>
+		<p>This is a quick example application for my application to Ziggurat Technologies</p>
+		<p>To get a user's information go the the url localhost:3000/users/exampleNameHere </p>
+	</div>
+	<h2>Create User Here</h2>
+	<form id="newUserForm" method="POST" action="/">
+		<label for="enteredName">
+			Name:
+			<input type="text" id="enteredName" name="enteredName">
+		</label>
+		<label for="enteredDate">
+			Birthdate:
+			<input type="date" id="enteredDate" name="enteredDate">
+		</label>
+		<button type="submit" value="Submit Form" for="newUserForm"> SUBMIT </button>
+	</form>
+	<h2>Delete User Here</h2>
+	<form id="deleteForm" method="POST" action="/deleteUser">
+		<label for="delName">
+			Name:
+			<input type="text" id="delName" name="delName">
+		</label>
+		<button type="submit" value="Submit Form" for="deleteForm"> DELETE </button>
+	</form>
+	<h2>Update User Here</h2>
+	<form id="updateForm" method="POST" action="/updateUser">
+		<label for="oldName">
+			Old Name:
+			<input type="text" id="oldName" name="oldName">
+		</label>
+		<label for="newName">
+			New Name:
+			<input type="text" id="newName" name="newName">
+		</label>
+		<label for="newDate">
+			New Birthdate:
+			<input type="date" id="newDate" name="newDate">
+		</label>
+		<p>Pick the number for which picture you want</p>
+		<label for="newJPG">
+			<input type="radio"" id="newJPG1" name="newJPG" value="2">
+			<lable for="newJPG1">Picture 1</lable><br>
+			<input type="radio"" id="newJPG2" name="newJPG" value="3">
+			<lable for="newJPG2">Picture 2</lable><br>
+			<input type="radio"" id="newJPG3" name="newJPG" value="4">
+			<lable for="newJPG3">Picture 3</lable><br>
+			<input type="radio"" id="newJPG4" name="newJPG" value="5">
+			<lable for="newJPG4">Picture 4</lable><br>
+		</label>
+		<br>
+		<div class="container">
+			<img src="./img/pic2.jpg" alt="Picture 2" class="image" width="200" height="200">
+			<div class="overlay">Picture 1</div>
+		</div>
+		<div class="container">
+			<img src="./img/pic3.jpg" alt="Picture 3" class="image" width="200" height="200">
+			<div class="overlay">Picture 2</div>
+		</div>
+		<div class="container">
+			<img src="./img/pic4.jpg" alt="Picture 4" class="image" width="200" height="200">
+			<div class="overlay">Picture 3</div>
+		</div>
+		<div class="container">
+			<img src="./img/pic5.jpg" alt="Picture 5" class="image" width="200" height="200">
+			<div class="overlay">Picture 4</div>
+		</div>
+		<br>
+		<button type="submit" value="Submit Form" for="updateForm"> UPDATE </button>
+	</form>
+	
+	<h2>Pre Created Example Users</h2>
+	<a href="http://localhost:3000/users/John"> John Data </a> <br>
+	<a href="http://localhost:3000/users/Emily"> Emily Data </a> <br>
+	<a href="http://localhost:3000/users/Robert">  Robert Data </a> <br>
+</div>

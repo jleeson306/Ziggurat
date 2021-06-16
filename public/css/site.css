@@ -1,0 +1,63 @@
+body {
+	background-color: lightblue;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+div {
+	text-align: center;
+}
+form {
+	text-align: center;
+}
+.footer {
+	font-size: 10px;
+}
+.head {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+* {box-sizing: border-box}
+.container {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	max-width: 300px;
+}
+.container:hover .overlay {
+	opacity: 1;
+}
+.image {
+	display: inline-block;
+	width: 50%;
+	height: auto;
+}
+.overlay {
+	position: absolute;
+	transform: translate(50%, 0%);
+	bottom: 0;
+	background: rgb(0, 0, 0); 
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 50%;
+	height: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
